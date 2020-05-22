@@ -43,7 +43,7 @@ with open(csvpath) as csvfile:
         
 
            
-        print(candidate_name)
+        print(candidate_votes)
         
         #if(candidate[2] = candidate):
             #candidate[2] = candidate + int(1)

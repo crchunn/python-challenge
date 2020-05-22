@@ -72,8 +72,18 @@ print("Total Months:")
 print(total_months)
 print(changes_in_profits)
 print(f"{profitavg:.2f}")
-print(greatestdecrease)
+
 print(greatestincrease)
+print(greatestdecrease)
+
+#output = (
+    #"Financial Analysis/n"
+   # "--------------------------------------/n"
+   # "Total Months" + str(total_months) + "/n"
+    #"Total: $" + (changes_in_profits) + "/n"
+   # "Average Change:" + (f"{profitavg:.2f}") + "/n"
+   # "Greatest Increase in Profits:" + (greatestincrease) + "/n"
+  #  "Greatest Decrease in Profits:" + (greatestdecrease) + "/n")
 
 #total number of months included in dataset
 
@@ -93,4 +103,5 @@ print(greatestincrease)
 
 #greatest decrease in losses (date and amount) over entire period
 
-
+#with open(output, "w") as textfile:
+    #textfile.write(output)
