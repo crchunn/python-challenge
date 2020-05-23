@@ -72,7 +72,7 @@ with open(poll_output_file, 'w') as txtfile:
     txtfile.write("\nElection Results")
     txtfile.write("\n----------------------------")
     txtfile.write(f"\nTotal Results: {total_votes}")
-    txtfile.write("----------------------------")
+    txtfile.write("\n----------------------------")
     for i in range(len(unique)):
         txtfile.write(f"\n{unique[i]}: {percent[i]}% {candidatecount[i]}")
     txtfile.write("\n----------------------------")
