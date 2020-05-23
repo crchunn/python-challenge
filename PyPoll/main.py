@@ -76,7 +76,7 @@ with open(poll_output_file, 'w') as txtfile:
     for i in range(len(unique)):
         txtfile.write(f"\n{unique[i]}: {percent[i]}% {candidatecount[i]}")
     txtfile.write("\n----------------------------")
-    txtfile.write(f"Winner: {winner}")
+    txtfile.write(f"\nWinner: {winner}")
 
 #with open(pypoll_csv, newline="") as csvfile:
     #csvreader = csv.reader(csvfile, delimiter=",")
