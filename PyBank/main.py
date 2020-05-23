@@ -5,7 +5,7 @@ import csv
 
 import statistics
 
-print("Financial Analysis")
+
 
 csvpath = os.path.join("Resources/budget_data.csv")
 
@@ -68,13 +68,26 @@ with open(csvpath) as csvfile:
 profitavg = sum(avg_of_profit)/len(avg_of_profit)
 
 
-print("Total Months:")
-print(total_months)
-print(changes_in_profits)
-print(f"{profitavg:.2f}")
+print("Financial Analysis")
+print("------------------------------------")
+print(f"Total Months: {total_months}")
+print(f"Total: $ {changes_in_profits}")
+print(f"Average Change: ${profitavg:.2f}")
+print(f"Greatest Increase in Profits: ${greatestincrease}")
+print(f"Greatest Decrease in Profits: ${greatestdecrease}")
 
-print(greatestincrease)
-print(greatestdecrease)
+poll_output_file = os.path.join("PyBank.txt")        
+with open(poll_output_file, 'w') as txtfile:
+
+    txtfile.write("\nFinancial Analysis")
+    txtfile.write("\n------------------------------------")
+    txtfile.write(f"\nTotal Months: {total_months}")
+    txtfile.write(f"\nTotal: $ {changes_in_profits}")
+    txtfile.write(f"\nAverage Change: ${profitavg:.2f}")
+    txtfile.write(f"\nGreatest Increase in Profits: ${greatestincrease}")
+    txtfile.write(f"Greatest Decrease in Profits: ${greatestdecrease}")
+
+
 
 #output = (
     #"Financial Analysis/n"

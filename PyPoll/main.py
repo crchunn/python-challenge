@@ -20,6 +20,7 @@ with open(csvpath) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
 
     csv_header = next(csvreader)
+
     cvotes = []
     total_votes = 0
     unique = []
@@ -68,7 +69,7 @@ print(f"Winner: {winner}")
 poll_output_file = os.path.join("PyPoll.txt")        
 with open(poll_output_file, 'w') as txtfile:
 
-    txtfile.write("Election Results")
+    txtfile.write("\nElection Results")
     txtfile.write("\n----------------------------")
     txtfile.write(f"\nTotal Results: {total_votes}")
     txtfile.write("----------------------------")
