@@ -64,7 +64,21 @@ for i in range(len(unique)):
     print(f"{unique[i]}: {percent[i]}% {candidatecount[i]}")
 print("----------------------------")
 print(f"Winner: {winner}")
-        
+
+poll_output_file = os.path.join("PyPoll.txt")        
+with open(poll_output_file, 'w') as txtfile:
+
+    txtfile.write("Election Results")
+    txtfile.write("\n----------------------------")
+    txtfile.write(f"\nTotal Results: {total_votes}")
+    txtfile.write("----------------------------")
+    for i in range(len(unique)):
+        txtfile.write(f"\n{unique[i]}: {percent[i]}% {candidatecount[i]}")
+    txtfile.write("\n----------------------------")
+    txtfile.write(f"Winner: {winner}")
+
+#with open(pypoll_csv, newline="") as csvfile:
+    #csvreader = csv.reader(csvfile, delimiter=",")
 
            
         # print(candidate_votes)
