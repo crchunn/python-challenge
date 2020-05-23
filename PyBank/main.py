@@ -85,7 +85,7 @@ with open(poll_output_file, 'w') as txtfile:
     txtfile.write(f"\nTotal: $ {changes_in_profits}")
     txtfile.write(f"\nAverage Change: ${profitavg:.2f}")
     txtfile.write(f"\nGreatest Increase in Profits: ${greatestincrease}")
-    txtfile.write(f"Greatest Decrease in Profits: ${greatestdecrease}")
+    txtfile.write(f"\nGreatest Decrease in Profits: ${greatestdecrease}")
 
 
 
